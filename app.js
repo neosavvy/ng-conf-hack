@@ -10,7 +10,6 @@ var express = require('express'),
     cylon = require('cylon'),
     leapmotion = require('./routes/leapmotion.js');
 
-
 var app = module.exports = express.createServer();
 
 // Hook Socket.io into Express
@@ -48,10 +47,10 @@ app.get('*', routes.index);
 
 // Socket.io Communication
 
-io.sockets.on('connection', socket);
+var currentSocket = io.sockets.on('connection', socket);
 
 //Leap Motion Device
-leapmotion(_, cylon, io);
+leapmotion(_, cylon, currentSocket);
 
 // Start server
 
