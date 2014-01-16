@@ -11,7 +11,7 @@ function AppCtrl($scope, socket) {
 
   socket.on('rotate', function (data) {
       console.log("data: " + JSON.stringify(data))
-      move(0, 10)
+      move(data.y, data.x);
   });
 
   $scope.sendZoomMessage = function() {

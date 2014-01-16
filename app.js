@@ -8,7 +8,8 @@ var express = require('express'),
     socket = require('./routes/socket.js'),
     _ = require('lodash-node'),
     cylon = require('cylon'),
-    leapmotion = require('./routes/leapmotion.js');
+    leapmotion = require('./routes/leapmotion.js'),
+    spheronJoystick = require('./routes/sphero-joystick.js');
 
 var app = module.exports = express.createServer();
 
@@ -51,6 +52,8 @@ var currentSocket = io.sockets.on('connection', socket);
 
 //Leap Motion Device
 leapmotion(_, cylon, currentSocket);
+//Sphero
+spheronJoystick(_, currentSocket);
 
 // Start server
 
