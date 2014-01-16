@@ -6,7 +6,7 @@
 var express = require('express'),
   routes = require('./routes'),
   socket = require('./routes/socket.js');
-  leapmotion = require('./routes/leapmotion.js')
+//  leapmotion = require('./routes/leapmotion.js')
 
 var app = module.exports = express.createServer();
 
