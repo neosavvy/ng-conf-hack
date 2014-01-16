@@ -1,3 +1,5 @@
+var _ = require('lodash-node'),
+    cylon = require('cylon');
 
 var earthAPI = (function () {
   var rotate = function () {
@@ -22,8 +24,10 @@ module.exports = function (socket) {
       earthAPI.zoom()
   })
 
-  socket.on('rotate', function() {
+
+
+  socket.on('rotate-request', function() {
       console.log("Rotationating!!!");
-      earthAPI.rotate()
+      socket.emit('rotate', {});
   })
 };
