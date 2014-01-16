@@ -26,7 +26,7 @@ module.exports = function (_, cylon, socket) {
             var _convert = function _convert(zPalmVelocity) {
                 if (zPalmVelocity > 41) {
                     return 1;
-                } else if (zPalmVelocity < -41) {
+                } else if (zPalmVelocity < -31) {
                     return -1;
                 }
                 return 0;
