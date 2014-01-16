@@ -29,14 +29,15 @@ function move (lat_degrees, lng_degrees) {
     lookAt.setLatitude(lookAt.getLatitude() + lat_degrees);
     lookAt.setLongitude(lookAt.getLongitude() + lng_degrees);
     ge.getView().setAbstractView(lookAt);
-}
+};
 
 var zoomLevel = {
-    "1": 2,
-    "-1": 0.5
+    "1": 1.1,
+    "-1": 0.9
 };
+
 function zoom(val) {
     var lookAt = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
     lookAt.setRange(lookAt.getRange() * zoomLevel[val]);
     ge.getView().setAbstractView(lookAt);
-}
+};
