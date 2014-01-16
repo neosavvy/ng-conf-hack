@@ -22,8 +22,12 @@ module.exports = function (socket) {
       earthAPI.zoom()
   })
 
-  socket.on('rotate', function() {
+
+
+  socket.on('rotate-request', function() {
       console.log("Rotationating!!!");
-      earthAPI.rotate()
+      socket.emit('rotate', {});
   })
+
+
 };

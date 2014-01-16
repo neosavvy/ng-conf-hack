@@ -10,6 +10,6 @@ First, grab the dependencies with npm:
 
 Then run the app like so:
 
-    node app.js
+    node earth.js
 
 And navigate to `localhost:3000`
