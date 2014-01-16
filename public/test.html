@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+    <script src="js/lib/angular/angular.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+
+
+</head>
+
+<body ng-app="myApp" data-ng-controller="AppCtrl">
+
+    <label ng-bind="title"></label>
+
+    <button ng-click="sendRotationMessage()">Rotate</button>
+    <button ng-click="sendZoomMessage()">Zoom</button>
+
+    <div id="map" style="height: 800px; width: 100%"></div>
+
+</body>
+</html>

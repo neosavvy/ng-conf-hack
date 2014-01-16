@@ -4,6 +4,8 @@
 
 function AppCtrl($scope, socket) {
 
+    $scope.title = "Google Earth Rotator"
+
   // Socket listeners
   // ================
 
@@ -80,6 +82,17 @@ function AppCtrl($scope, socket) {
       }
     });
   };
+
+  $scope.sendRotationMessage = function() {
+    console.log("sending a rotation message....");
+      socket.emit('rotate')
+  }
+
+  $scope.sendZoomMessage = function() {
+    console.log("sending a zoom message....");
+      socket.emit('zoom')
+  }
+
 
   $scope.messages = [];
 
