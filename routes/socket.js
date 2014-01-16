@@ -20,10 +20,10 @@ module.exports = function (socket) {
   socket.on('zoom', function() {
       console.log("Zooming!!!!");
       earthAPI.zoom()
-  })
+  });
 
   socket.on('rotate', function() {
       console.log("Rotationating!!!");
       earthAPI.rotate()
-  })
+  });
 };

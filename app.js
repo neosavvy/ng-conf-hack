@@ -4,9 +4,12 @@
  */
 
 var express = require('express'),
-  routes = require('./routes'),
-  socket = require('./routes/socket.js');
-  leapmotion = require('./routes/leapmotion.js')
+    routes = require('./routes'),
+    socket = require('./routes/socket.js'),
+    _ = require('lodash-node'),
+    cylon = require('cylon'),
+    leapmotion = require('./routes/leapmotion.js');
+
 
 var app = module.exports = express.createServer();
 
@@ -46,6 +49,9 @@ app.get('*', routes.index);
 // Socket.io Communication
 
 io.sockets.on('connection', socket);
+
+//Leap Motion Device
+leapmotion(_, cylon, io);
 
 // Start server
 
