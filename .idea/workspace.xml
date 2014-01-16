@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb67e464-8cbc-4792-a234-4cc9333c8916" name="Default" comment="" />
+    <list default="true" id="fb67e464-8cbc-4792-a234-4cc9333c8916" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ng-conf-hack.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,19 +35,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="10" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+            <state line="4" column="5" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07772021" vertical-offset="0" max-vertical-offset="772">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leapmotion.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="leapmotion.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/leapmotion/leapmotion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="41" selection-start="509" selection-end="509" vertical-scroll-proportion="0.38860103" vertical-offset="0" max-vertical-offset="840">
+            <state line="20" column="41" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
               <folding />
             </state>
           </provider>
@@ -258,16 +261,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/client/leapmotion/leapmotion.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="10" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+        <state line="20" column="41" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/leapmotion/leapmotion.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="509" selection-end="509" vertical-scroll-proportion="0.38860103" vertical-offset="0" max-vertical-offset="840">
+        <state line="4" column="5" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07772021" vertical-offset="0" max-vertical-offset="772">
           <folding />
         </state>
       </provider>
