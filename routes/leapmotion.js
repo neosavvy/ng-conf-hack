@@ -24,7 +24,7 @@ module.exports = function (_, cylon, socket) {
             var _sample = {};
 
             var _convert = function _convert(zPalmVelocity) {
-                if (zPalmVelocity > 41) {
+                if (zPalmVelocity > 31) {
                     return 1;
                 } else if (zPalmVelocity < -41) {
                     return -1;
@@ -33,11 +33,12 @@ module.exports = function (_, cylon, socket) {
             };
 
             var _sendZoomData = _.throttle(function _sendZoomData() {
-                var maxVal = _.max(_sample);
-                Logger.info("MAX: " + _.invert(_sample)[maxVal]);
-                socket.emit("zoom", _.invert(_sample)[maxVal]);
+                var val = _.invert(_sample)[_.max(_sample)];
+                if (val !== '0') {
+                    socket.emit("zoom", val);
+                }
                 _sample = {};
-            }, 200);
+            }, 100);
 
             my.leapmotion.on('hand', function (hand) {
                 var val = String(_convert(hand.palmVelocity[2]));

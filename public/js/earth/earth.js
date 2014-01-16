@@ -24,10 +24,10 @@ google.setOnLoadCallback(init)
 
 // app code
 //
-function move (lat_degrees, lng_degrees) {
+function move (pitch, yaw) {
     var lookAt = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
-    lookAt.setLatitude(lookAt.getLatitude() + lat_degrees);
-    lookAt.setLongitude(lookAt.getLongitude() + lng_degrees);
+    lookAt.setLatitude(lookAt.getLatitude() + pitch);
+    lookAt.setLongitude(lookAt.getLongitude() + yaw);
     ge.getView().setAbstractView(lookAt);
 }
 
