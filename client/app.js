@@ -1,4 +1,6 @@
 
+// earth API bootstrap
+//
 var ge;
 google.load("earth", "1", {"other_params": "sensor=true"});
 
@@ -17,6 +19,11 @@ function failureCB(errorCode) {
 
 google.setOnLoadCallback(init)
 
+//
+////
+
+// app code
+//
 function move (lat_degrees, lng_degrees) {
     var lookAt = ge.getView().copyAsLookAt(ge.ALTITUDE_RELATIVE_TO_GROUND);
     lookAt.setLatitude(lookAt.getLatitude() + lat_degrees);
