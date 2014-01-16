@@ -20,6 +20,7 @@ function AppCtrl($scope, socket) {
   }
 
   socket.on('zoom', function (data) {
+      console.log("Catching a zoom!")
       zoom(data);
   });
 

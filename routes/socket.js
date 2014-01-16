@@ -19,12 +19,10 @@ var earthAPI = (function () {
 
 module.exports = function (socket) {
 
-  socket.on('zoom', function() {
+  socket.on('zoom-request', function() {
       console.log("Zooming!!!!");
-      earthAPI.zoom()
+      socket.emit('zoom', 1)
   })
-
-
 
   socket.on('rotate-request', function() {
       console.log("Rotationating!!!");
